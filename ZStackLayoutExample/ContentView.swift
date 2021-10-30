@@ -13,12 +13,11 @@ struct ContentView: View {
             // Top-half of layout
             ZStack {
                 
-                // Bottom layer of ZStack {
+                // Bottom layer of ZStack
                 AsyncImage(url: URL(string: "https://loremflickr.com/900/200/clouds"))
                     .frame(width: 900, height: 200)
 
-                                
-                // Middle layer of ZStack {
+                // Middle layer of ZStack
                 HStack {
 
                     // Left column
