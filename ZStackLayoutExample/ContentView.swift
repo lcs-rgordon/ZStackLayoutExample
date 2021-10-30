@@ -23,6 +23,29 @@ struct ContentView: View {
                     Spacer()
                 }
                 
+                // Middle layer of ZStack {
+                HStack {
+
+                    // Left column
+                    VStack {
+                        Spacer()
+                        
+                        AsyncImage(url: URL(string: "https://placekitten.com/200/100"))
+                            .frame(width: 200, height: 100)
+                    }
+                    
+                    // Middle column
+                    Spacer()
+                    
+                    // Right column
+                    VStack {
+                        Spacer()
+                        
+                        AsyncImage(url: URL(string: "https://placekitten.com/200/100"))
+                            .frame(width: 200, height: 100)
+                    }
+                }
+                
 
             }
             
