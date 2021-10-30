@@ -14,13 +14,16 @@ struct ContentView: View {
             ZStack {
                 
                 // Bottom layer of ZStack
+                // (Background image)
                 AsyncImage(url: URL(string: "https://loremflickr.com/900/200/clouds"))
                     .frame(width: 900, height: 200)
 
                 // Middle layer of ZStack
+                // (Kittens, blank space, kittens)
                 HStack {
 
-                    // Left column
+                    // 1. Left column
+                    // (Kittens)
                     VStack {
                         Spacer()
                         
@@ -28,10 +31,12 @@ struct ContentView: View {
                             .frame(width: 200, height: 100)
                     }
                     
-                    // Middle column
+                    // 2. Middle column
+                    // (Blank space)
                     Spacer()
                     
-                    // Right column
+                    // 3. Right column
+                    // (Kittens)
                     VStack {
                         Spacer()
                         
@@ -41,6 +46,7 @@ struct ContentView: View {
                 }
                 
                 // Top layer of ZStack
+                // (Text title)
                 VStack {
                     
                     Text("TITLE HERE")
