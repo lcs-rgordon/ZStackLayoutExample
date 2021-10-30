@@ -13,16 +13,11 @@ struct ContentView: View {
             // Top-half of layout
             ZStack {
                 
-                // Bottom layer of ZStack
-                VStack {
-                    
-                    Text("TITLE HERE")
-                        .fontWeight(.black)
-                        .font(Font.custom("Helvetica Neue", size: 64))
+                // Bottom layer of ZStack {
+                AsyncImage(url: URL(string: "https://loremflickr.com/900/200/clouds"))
+                    .frame(width: 900, height: 200)
 
-                    Spacer()
-                }
-                
+                                
                 // Middle layer of ZStack {
                 HStack {
 
@@ -46,6 +41,15 @@ struct ContentView: View {
                     }
                 }
                 
+                // Top layer of ZStack
+                VStack {
+                    
+                    Text("TITLE HERE")
+                        .fontWeight(.black)
+                        .font(Font.custom("Helvetica Neue", size: 64))
+
+                    Spacer()
+                }
 
             }
             
